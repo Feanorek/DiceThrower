@@ -8,12 +8,16 @@ namespace DiceThrower.Services.Models
 
         public Dice(short sideCount, int modifier = 0)
         {
-            SideCount = sideCount;
+            if (sideCount < 0)
+                IsNegative = true;
+            SideCount = Math.Abs(sideCount);
             Modifier = modifier;
         }
 
         public short SideCount { get; }
         public int Modifier { get; }
+
+        public bool IsNegative { get; }
 
         public int Throw()
         {
