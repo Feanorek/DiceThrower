@@ -1,4 +1,5 @@
-﻿using DiceThrower.Services.Models;
+﻿using DiceThrower.Factories;
+using DiceThrower.Services.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,12 @@ namespace DiceThrower.Services
 {
     public class DiceService
     {
+        private readonly DiceFactory _diceFactory;
 
+        public DiceService(DiceFactory diceFactory)
+        {
+            _diceFactory = diceFactory;
+        }
         public int[] ThrowDices(IEnumerable<Dice> dices)
         {
             return dices.Select(p => p.Throw()).ToArray();
@@ -16,6 +22,7 @@ namespace DiceThrower.Services
 
         public IEnumerable<Dice> ParseDices(string input)
         {
+
             throw new NotImplementedException();
         }
     }
