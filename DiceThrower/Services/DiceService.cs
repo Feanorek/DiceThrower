@@ -23,7 +23,7 @@ namespace DiceThrower.Services
         public IEnumerable<Dice> ParseDices(string input)
         {
 
-            throw new NotImplementedException();
+            return _diceFactory.Parse(input);
         }
     }
 }

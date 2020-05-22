@@ -17,9 +17,15 @@ namespace DiceThrower.Services.Models
 
         public int Throw()
         {
-            var next = _random.Next(1, SideCount) + Modifier;
+            var next = (SideCount == 0 ? 0 : _random.Next(1, SideCount)) + Modifier;
             return next;
         }
+        public override string ToString()
+        {
+            var dice = $"d{SideCount}";
+            var modifier = Modifier == 0 ? "" : Modifier > 0 ? "+" + Modifier : Modifier.ToString();
 
+            return dice + modifier;
+        }
     }
 }

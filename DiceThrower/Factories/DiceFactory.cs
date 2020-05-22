@@ -16,10 +16,13 @@ namespace DiceThrower.Factories
             var matches = _parseRegex.Matches(inputString);
             if (matches.Count == 0)
                 throw new Exception("Nope.");
-            foreach (var match in matches)
+            foreach (Match match in matches)
             {
-                yield return new Dice(0, 0);
+                var dices = match.Groups;
+                var numbers = match.Groups["numbers"];
+               
             }
+                yield return new Dice(0, 0);
         }
     }
 }
