@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceThrower", "DiceThrower\DiceThrower.csproj", "{4267B886-3396-4C99-91B5-73F3F818230D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceThrowerTests", "DiceThrowerTests\DiceThrowerTests.csproj", "{95514592-235F-4AC8-A9CD-8B7AFD32D559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4267B886-3396-4C99-91B5-73F3F818230D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4267B886-3396-4C99-91B5-73F3F818230D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4267B886-3396-4C99-91B5-73F3F818230D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4267B886-3396-4C99-91B5-73F3F818230D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95514592-235F-4AC8-A9CD-8B7AFD32D559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95514592-235F-4AC8-A9CD-8B7AFD32D559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95514592-235F-4AC8-A9CD-8B7AFD32D559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95514592-235F-4AC8-A9CD-8B7AFD32D559}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39A320DE-1433-4B26-9823-218A9C63BFEA}
+	EndGlobalSection
+EndGlobal
