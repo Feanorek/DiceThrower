@@ -9,9 +9,9 @@ namespace DiceThrower.Factories
 {
     public class DiceFactory
     {
-        public IEnumerable<Dice> Parse(string inputString)
+        public IEnumerable<Throwable> ParseDungeonAndDragonsDice(string inputString)
         {
-            var dices = new List<Dice>();
+            var dices = new List<Throwable>();
             var items = inputString.Split("+").Select(p => p.Trim());
             foreach (var possiblyContainingMinus in items)
             {
@@ -35,7 +35,7 @@ namespace DiceThrower.Factories
                         }
                         else
                         {
-                            dices.Add(new Dice(0, value));
+                            dices.Add(new ConstantDice(value));
                         }
                     }
                     else if (parts.Length == 2)

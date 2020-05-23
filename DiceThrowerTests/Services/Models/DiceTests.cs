@@ -27,7 +27,7 @@ namespace DiceThrower.Services.Models.Tests
         [TestMethod]
         public void NegativeTest()
         {
-            var negativeD10 = new Dice(-10, 0);
+            var negativeD10 = new Dice(-10);
             var throws = Enumerable.Repeat(0, 100).Select(p => negativeD10.Throw());
             foreach (var thr in throws)
             {

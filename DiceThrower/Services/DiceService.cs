@@ -15,15 +15,11 @@ namespace DiceThrower.Services
         {
             _diceFactory = diceFactory;
         }
-        public int[] ThrowDices(IEnumerable<Dice> dices)
-        {
-            return dices.Select(p => p.Throw()).ToArray();
-        }
+       
+        //public string ThrowDice(string input)
+        //{
+        //    var dices = _diceFactory.Parse(input);
 
-        public IEnumerable<Dice> ParseDices(string input)
-        {
-
-            return _diceFactory.Parse(input);
-        }
+        //}
     }
 }
