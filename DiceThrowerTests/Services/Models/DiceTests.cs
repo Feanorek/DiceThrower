@@ -23,5 +23,17 @@ namespace DiceThrower.Services.Models.Tests
                 Assert.IsTrue(thr <= 6);
             }
         }
+
+        [TestMethod]
+        public void NegativeTest()
+        {
+            var negativeD10 = new Dice(-10, 0);
+            var throws = Enumerable.Repeat(0, 100).Select(p => negativeD10.Throw());
+            foreach (var thr in throws)
+            {
+                Assert.IsTrue(thr <= -1);
+                Assert.IsTrue(thr >= -10);
+            }
+        }
     }
 }

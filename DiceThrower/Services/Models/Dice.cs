@@ -22,6 +22,8 @@ namespace DiceThrower.Services.Models
         public int Throw()
         {
             var next = (SideCount == 0 ? 0 : _random.Next(1, SideCount)) + Modifier;
+            if (IsNegative)
+                return -next;
             return next;
         }
         public override string ToString()
