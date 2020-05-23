@@ -6,7 +6,7 @@ namespace DiceThrower.Services.Models
     {
         private static Random _random = new Random();
 
-        public Dice(short sideCount, int modifier = 0)
+        public Dice(int sideCount, int modifier = 0)
         {
             if (sideCount < 0)
                 IsNegative = true;
@@ -14,7 +14,7 @@ namespace DiceThrower.Services.Models
             Modifier = modifier;
         }
 
-        public short SideCount { get; }
+        public int SideCount { get; }
         public int Modifier { get; }
 
         public bool IsNegative { get; }
