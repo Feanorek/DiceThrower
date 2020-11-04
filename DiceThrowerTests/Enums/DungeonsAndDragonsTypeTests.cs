@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DiceThrower.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using DiceThrowerTests.TestClasses;
 
 namespace DiceThrower.Enums.Tests

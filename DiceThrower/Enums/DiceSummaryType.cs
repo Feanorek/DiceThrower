@@ -33,4 +33,12 @@ namespace DiceThrower.Enums
             return stringBuilder.ToString();
         }
     }
+
+    public class GenesysType : DiceSummaryType
+    {
+        public override string CalculateSummary(IEnumerable<Throwable> dices)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
